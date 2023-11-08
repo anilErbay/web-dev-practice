@@ -1,0 +1,350 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  background-color: #f9f9f9;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: #1a3596;
+}
+
+ul {
+  list-style: none;
+}
+
+/* NAVBAR */
+.navbar {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 5px 14px 0 0;
+}
+
+.navbar-top a {
+  font-size: 11px;
+  color: #5f6a72;
+  padding: 6px;
+}
+
+.navbar-top a:hover {
+  color: #0698d9;
+}
+
+.navbar-middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.navbar-middle img {
+  padding: 10px 0 10px 20px;
+}
+
+.navbar-middle .text-field {
+  width: 107px;
+  height: 32px;
+  background-color: #f6f6f6;
+  padding: 0 10px 0 30px;
+  border: none;
+  font-size: 12px;
+}
+
+.navbar-middle form i {
+  position: absolute;
+  top: 22px;
+  right: 87px;
+  color: #5f6a72;
+}
+
+.navbar-bottom {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 380px;
+  padding-bottom: 5px;
+}
+
+.navbar-bottom a {
+  font-size: 12px;
+  font-weight: bold;
+  color: #5f6a72;
+}
+
+.navbar-bottom a:hover {
+  color: #0698d9;
+}
+
+/* HERO */
+.hero {
+  width: 100%;
+  height: 530px;
+  background: url("https://www.boeing.com/resources/boeingdotcom/principles/gedi/images/nahm-2023-hero.jpg")
+    no-repeat center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.hero .content {
+  width: 480px;
+  height: 112px;
+  background-color: rgba(0, 120, 184, 0.8);
+  margin: 0 30px 60px 0;
+  padding: 10px 0 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+
+.hero .content h1 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 0.95;
+  padding-right: 20px;
+}
+
+.hero .content a {
+  align-self: flex-end;
+  background-color: #0078b8;
+  padding: 8px 18px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 300;
+}
+
+.hero .number {
+  color: #eff0f1;
+  font-size: 13px;
+  position: absolute;
+  bottom: 8px;
+  right: 160px;
+}
+
+.hero .share {
+  transform: rotate(270deg);
+  background-color: #058fda;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding: 7px 8px 6px 5px;
+  position: fixed;
+  top: 30%;
+  right: -1%;
+}
+
+.hero .fa {
+  color: #f6f6f6;
+}
+
+.hero .fa-chevron-left {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+}
+
+.hero .fa-chevron-right {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+}
+
+/* CARDS */
+.cards-wrapper {
+  width: 62%;
+  margin: 0 auto;
+}
+
+.cards-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.card {
+  margin-bottom: 70px;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card h2 {
+  color: #0078b8;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin: 14px 0 10px 0;
+}
+
+.card p {
+  color: #5f6a72;
+  padding: 5px 0;
+  font-size: 0.875rem;
+}
+
+.container .btn {
+  position: absolute;
+  bottom: 440px;
+  right: 0;
+  font-size: 13px;
+  background-color: #eff0f1;
+  color: #a1a3a6;
+  padding: 6px 10px;
+  border: none;
+  margin-right: 26px;
+  transition: opacity 150ms ease;
+}
+
+.container .btn:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+.container .fa-chevron-up {
+  position: absolute;
+  right: 0;
+  bottom: 440px;
+  margin-left: 6px;
+  background-color: #0698d9;
+  color: #eff0f1;
+  padding: 5.5px;
+  transition: opacity 150ms ease;
+}
+
+.container fa-chevron-up:hover {
+  cursor: pointer;
+  opacity: 0.9;
+}
+
+/* UTILITY */
+.utility {
+  background-color: #fff;
+  height: 400px;
+  padding: 20px;
+}
+
+.utility-wrapper {
+  width: 53%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.utility-wrapper ul,
+.utility-wrapper ul li a {
+  color: #5f6a72;
+  font-size: 13px;
+}
+
+.utilities li:first-child {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.utilities li {
+  padding: 4px;
+}
+
+.utilities .stock {
+  margin-top: 15px;
+}
+
+.utility-wrapper li a:hover {
+  color: #0698d9;
+}
+
+.utility-wrapper .follow-boeing {
+  background: linear-gradient(
+    180deg,
+    rgba(239, 240, 241, 0.3) 20%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+
+.utilities .stock-quote {
+  color: #0698d9;
+}
+
+.utilities .stock-name {
+  color: #000;
+}
+
+.stock-list img {
+  width: 26px;
+  height: 13px;
+}
+
+.utilities .stock-price {
+  color: #000;
+}
+
+.utilities .stock-price-open {
+  color: #0698d9;
+}
+
+.utilities .stock-date {
+  font-size: 10px;
+}
+
+/* FOOTER */
+.footer {
+  width: 100%;
+  height: 40px;
+  padding: 20px;
+  background-color: #eaeaea12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p,
+.footer ul li a {
+  color: #a1a3a6;
+  font-size: 11px;
+  opacity: 0.7;
+}
+
+.footer .footer-links {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer .footer-links li a {
+  padding: 0 5px;
+}
+
+.footer .footer-links li a:hover {
+  color: #0698d9;
+}
