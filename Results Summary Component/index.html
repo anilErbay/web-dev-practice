@@ -13,6 +13,7 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
   <body>
+    <!-- Result -->
     <main class="card">
       <section class="result">
         <h2 class="result-title">Your Result</h2>
@@ -25,38 +26,49 @@
           You scored higher than 65% of the people who have taken these tests.
         </p>
       </section>
+
+      <!-- Summary -->
       <section class="summary">
         <h3 class="summary-title">Summary</h3>
         <div class="grid-container">
           <div class="reaction">
-            <img src="assets/images/icon-reaction.svg" alt="reaction icon" />
-            <h4>Reaction</h4>
-            <p class="summary-score"><span class="bold">80</span> / 100</p>
+            <div class="reaction-left">
+              <img src="assets/images/icon-reaction.svg" alt="reaction icon" />
+              <h4>Reaction</h4>
+            </div>
+            <div class="reaction-right">
+              <p><span class="bold">80</span> / 100</p>
+            </div>
           </div>
           <div class="memory">
-            <img src="assets/images/icon-memory.svg" alt="memory icon" />
-            <h4>Memory</h4>
-            <p>
-              <span class="summary-score">92</span
-              ><span class="hundred"> / 100</span>
-            </p>
+            <div class="memory-left">
+              <img src="assets/images/icon-memory.svg" alt="memory icon" />
+              <h4>Memory</h4>
+            </div>
+            <div class="memory-right">
+              <p><span class="bold">92</span> / 100</p>
+            </div>
           </div>
           <div class="verbal">
-            <img src="assets/images/icon-verbal.svg" alt="verbal icon" />
-            <h4>Verbal   </h4>
-            <p>
-              <span class="summary-score">61</span
-              ><span class="hundred"> / 100</span>
-            </p>
+            <div class="verbal-left">
+              <img src="assets/images/icon-verbal.svg" alt="verbal icon" />
+              <h4>Verbal</h4>
+            </div>
+            <div class="verbal-right">
+              <p><span class="bold">61</span> / 100</p>
+            </div>
           </div>
           <div class="visual">
-            <h4>Visual</h4>
-            <p>
-              <span class="summary-score">72</span
-              ><span class="hundred"> / 100</span>
-            </p>
+            <div class="visual-left">
+              <img src="assets/images/icon-visual.svg" alt="visual icon" />
+              <h4>Visual</h4>
+            </div>
+            <div class="visual-right">
+              <p><span class="bold">72</span> / 100</p>
+            </div>
           </div>
         </div>
+        <button class="btn">Continue</button>
       </section>
     </main>
 
