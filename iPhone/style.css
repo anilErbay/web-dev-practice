@@ -1,0 +1,328 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #ced1d6;
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+/* phone */
+.iphone-1 {
+  width: 350px;
+  height: 700px;
+  background-color: #fff;
+  border: 12px solid #333;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: -6px 7px 12px 0px rgba(36, 32, 32, 0.7);
+  background: url("img/bg1.png") no-repeat center center/cover;
+}
+
+.iphone-2 {
+  width: 350px;
+  height: 700px;
+  background-color: #fff;
+  border: 12px solid #333;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: -6px 7px 12px 0px rgba(36, 32, 32, 0.7);
+  background: url("img/bg2.png") no-repeat center center/cover;
+}
+
+.notch {
+  background-color: #333;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px 2px 12px 12px;
+}
+
+.mic {
+  background-color: #e6e8eb;
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.cam {
+  background-color: #e6e8eb;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+  top: 6px;
+  right: 110px;
+}
+
+.silent-btn {
+  background-color: #333;
+  width: 12px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.volume-up-btn {
+  background-color: #333;
+  width: 12px;
+  height: 55px;
+  position: absolute;
+  top: 150px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.volume-down-btn {
+  background-color: #333;
+  width: 12px;
+  height: 55px;
+  position: absolute;
+  top: 220px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.side-btn {
+  background-color: #333;
+  width: 12px;
+  height: 70px;
+  position: absolute;
+  top: 180px;
+  right: -20px;
+  border-radius: 4px;
+}
+
+/* iphone 1 */
+.iphone-1 .top p {
+  visibility: hidden;
+}
+
+.iphone-1 .info {
+  color: #e6e8eb;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.iphone-1 .info p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.iphone-1 .info h1 {
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.flash-and-camera {
+  width: 90%;
+  height: 50px;
+  margin: 420px auto;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.flash-and-camera div {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.337);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.flash-and-camera div:hover {
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+/* iphone 2 */
+/* top bar */
+.top {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0 0 35px;
+}
+
+.top .top-right {
+  margin: 5px 20px 0 0;
+}
+
+/* image edit */
+.grid-container #spotify-photo,
+#netflix-photo {
+  width: 48px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+/* main container */
+.grid-container {
+  width: 90%;
+  margin: 30px auto;
+  display: grid;
+  grid-template-areas:
+    "clock camera fitness fitness"
+    "shortcuts translate fitness fitness"
+    "tv stocks mail files"
+    "appstore weather health photos"
+    "news home notes reminders"
+    "find netflix spotify settings";
+  gap: 20px;
+}
+
+.grid-container .app {
+  width: 55px;
+  height: 55px;
+  transition: all 0.3s ease-in;
+}
+
+.app:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
+
+.grid-container p {
+  color: #fff;
+  font-size: 10px;
+  text-align: center;
+}
+
+#clock {
+  grid-area: clock;
+}
+
+#cam {
+  grid-area: cam;
+}
+
+#fitness {
+  grid-area: fitness;
+}
+
+#tv {
+  grid-area: tv;
+}
+
+#stocks {
+  grid-area: stocks;
+}
+
+#mail {
+  grid-area: mail;
+}
+
+#files {
+  grid-area: files;
+}
+
+#appstore {
+  grid-area: appstore;
+}
+
+#weather {
+  grid-area: weather;
+}
+
+#health {
+  grid: health;
+}
+
+#photos {
+  grid: photos;
+}
+
+#news {
+  grid: news;
+}
+
+#home {
+  grid: home;
+}
+
+#notes {
+  grid: notes;
+}
+
+#reminders {
+  grid: reminders;
+}
+
+#settings {
+  grid: settings;
+}
+
+#netflix {
+  grid: netflix;
+}
+
+#spotify {
+  grid: spotify;
+}
+
+#find {
+  grid: find;
+}
+
+#shortcuts {
+  grid: shortcuts;
+}
+
+#translate {
+  grid: translate;
+}
+
+/* menu */
+.menu {
+  height: 85px;
+  width: 305px;
+  background: #ffffff52;
+  /* margin-bottom: 8px; */
+  margin: 80px auto;
+  border-radius: 39px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu > * {
+  transition: all 0.3s ease-in;
+}
+
+.menu > *:hover {
+  cursor: pointer;
+  transform: scale(0.9);
+}
