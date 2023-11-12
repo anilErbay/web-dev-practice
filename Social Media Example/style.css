@@ -1,0 +1,309 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #ced1d6;
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 120px;
+}
+
+/* img */
+img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  color: #ced1d6;
+}
+
+/* phone */
+.iphone {
+  width: 350px;
+  height: 700px;
+  background-color: #252525;
+  border: 12px solid #333;
+  border-radius: 50px;
+  position: relative;
+  box-shadow: -6px 7px 12px 0px rgba(36, 32, 32, 0.7);
+}
+
+.notch {
+  background-color: #333;
+  width: 150px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px 2px 12px 12px;
+}
+
+.mic {
+  background-color: #e6e8eb;
+  width: 50px;
+  height: 6px;
+  border-radius: 5px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.4;
+}
+
+.cam {
+  background-color: #e6e8eb;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  opacity: 0.4;
+  position: absolute;
+  top: 6px;
+  right: 110px;
+}
+
+.silent-btn {
+  background-color: #333;
+  width: 12px;
+  height: 30px;
+  position: absolute;
+  top: 100px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.volume-up-btn {
+  background-color: #333;
+  width: 12px;
+  height: 55px;
+  position: absolute;
+  top: 150px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.volume-down-btn {
+  background-color: #333;
+  width: 12px;
+  height: 55px;
+  position: absolute;
+  top: 220px;
+  left: -20px;
+  border-radius: 4px;
+}
+
+.side-btn {
+  background-color: #333;
+  width: 12px;
+  height: 70px;
+  position: absolute;
+  top: 180px;
+  right: -20px;
+  border-radius: 4px;
+}
+
+.top {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top p {
+  font-size: 14px;
+  font-weight: 500;
+  margin: 5px 0 0 35px;
+}
+
+.top .top-right {
+  margin: 5px 20px 0 0;
+}
+
+/* find friends */
+.find-friends {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.find-friends h1 {
+  color: #fff;
+  opacity: 0.9;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.find-friends img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  opacity: 0.8;
+  margin-left: 10px;
+}
+
+.find-right {
+  display: flex;
+  align-items: center;
+}
+
+.find-right i {
+  opacity: 0.9;
+}
+
+/* search */
+.search {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+input[type="search"] {
+  width: 70%;
+  height: 30px;
+  background-color: #383838;
+  border-radius: 15px;
+  margin-left: 20px;
+  padding: 15px 30px;
+}
+
+input[type="search"]::placeholder {
+  color: #ced1d6;
+  padding-left: 5px;
+}
+
+.search .fa-search {
+  position: absolute;
+  top: 10px;
+  left: 30px;
+}
+
+.search .cancel-btn {
+  color: #ced1d6;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+/* navbar */
+.navbar {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #383838ab;
+  border-radius: 5px;
+  padding: 15px 20px;
+  position: relative;
+}
+
+.navbar-item:nth-of-type(1) {
+  color: #fff;
+  z-index: 4;
+}
+
+.navbar-item:nth-of-type(1)::before {
+  content: "";
+  width: 22.5%;
+  height: 100%;
+  background-color: #838385;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+/* cards */
+.cards-section {
+  width: 100%;
+  display: grid;
+  padding: 5px 20px;
+  gap: 25px;
+}
+
+.card {
+  width: 100%;
+  height: 120%;
+  background-color: #383838;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.card h2 {
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.card p {
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.card a {
+  background-color: rgb(43, 102, 211);
+  color: #fff;
+  padding: 6px 15px;
+  border-radius: 15px;
+}
+
+/* bottom nav */
+.bottom-nav {
+  width: 100%;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: #383838;
+  margin-top: 35px;
+  border-radius: 0 0 30px 30px;
+}
+
+.bottom-nav .fa-camera {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #e6e8eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+}
+
+.bottom-nav p {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #ced1d6;
+  opacity: 0.8;
+}
+
+.bottom-nav .bottom-nav-item:hover {
+  cursor: pointer;
+}
