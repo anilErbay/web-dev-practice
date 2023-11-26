@@ -2,4 +2,4 @@
 
 - HTML&CSS Bootcamp Final Project
 
-![project design overview](/design/swipe_ss.jpg)
+![Design preview for the Swipe Project](./design/swipe_ss.jpg)
