@@ -1,0 +1,132 @@
+:root {
+  /* colors */
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+
+  --p-size: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+  font-family: "Montserrat", sans-serif;
+  overflow: hidden;
+}
+
+.card-container {
+  width: 700px;
+  height: 500px;
+  background-color: var(--white);
+  display: flex;
+  border-radius: 10px;
+}
+
+.card-left {
+  width: 50%;
+  background: url("images/image-product-desktop.jpg") no-repeat center
+    center/cover;
+}
+
+.card-right {
+  width: 50%;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-right .description {
+  font-size: var(--p-size);
+  color: var(--dark-grayish-blue);
+  /* width: 80%; */
+  line-height: 25px;
+}
+
+.card-right h2 {
+  color: var(--dark-grayish-blue);
+  font-weight: 500;
+  font-size: var(--p-size);
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.card-right h1 {
+  font-family: "Fraunces", serif;
+  font-size: calc(var(--p-size) * 3);
+  line-height: 45px;
+}
+
+.card-right .price-container {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.price-container .price-new {
+  font-size: calc(var(--p-size) * 2.3);
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+}
+
+.price-container .price-old {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.btn {
+  background-color: var(--dark-cyan);
+  border: none;
+  color: var(--white);
+  font-weight: 700;
+  font-size: calc(var(--p-size) * 1.1);
+  padding: 20px 0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn img {
+  margin-right: 10px;
+}
+
+@media (max-width: 375px) {
+  .card-container {
+    width: 90%;
+    height: 95%;
+    flex-direction: column;
+  }
+
+  .card-left {
+    height: 45%;
+    width: 100%;
+    background: url("images/image-product-desktop.jpg") no-repeat center
+      center/cover;
+    border-radius: 10px 10px 0 0;
+  }
+
+  .card-right {
+    height: 55%;
+    width: 100%;
+  }
+
+  .card-right h1 {
+    font-size: calc(var(--p-size) * 2);
+    font-weight: 700;
+    line-height: 40px;
+  }
+}
